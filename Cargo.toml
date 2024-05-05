@@ -1,0 +1,23 @@
+[package]
+name = "blender-launcher"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+anyhow = "1.0.82"
+error-stack = "0.4.1"
+i18n-embed = { version = "0.14.1", features = ["fluent-system", "desktop-requester"] }
+i18n-embed-fl = "0.8.0"
+iced = { git = "https://github.com/iced-rs/iced.git", default-features = false, rev = "e617d7e9", features = ["svg", "wgpu", "tiny-skia", "tokio"] }
+image = { version = "0.25.1", default-features = false, features = ["png"] }
+once_cell = "1.19.0"
+reqwest = { version = "0.12.4", features = ["json"] }
+rust-embed = "8.3.0"
+strum = "0.26.2"
+strum_macros = "0.26.2"
+sys-locale = "0.3.1"
+thiserror = "1.0.59"
+tracing = { version = "0.1.40", features = ["log"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+unic-langid = { version = "0.9.4", features = ["macros"] }
